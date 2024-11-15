@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MA STEEL CALCULATOR</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="brands">
+            <h1><span>M</span>A STEEL CASH ACCOUNT</h1>
+        </div>
+        
+        <div class="value">
+            <input type="text" id="weight" placeholder="weight" required>
+            <input type="text" id="particular" placeholder="particular" required>
+            <input type="text" id="amount" placeholder="cash in" required>
+            <input type="text" id="cashout" placeholder="cash out" required>
+            <i id="validation">Enter all details above</i>
+        </div>
+
+        <input type="submit" id="submit" value="Submit">
+    </div>
+
+    <div id="entry">
+        <div class="entries">
+            <span>Weight</span>
+            <span>Particular</span>
+            <span>Cash In</span>
+            <span>Cash Out</span>
+            <span>Date</span>
+            <span>Action</span> <!-- Added column for Delete button -->
+        </div>
+        <div class="entryValue">
+            <!-- Dynamic entries will be appended here by JavaScript -->
+        </div>
+    </div>
+
+    <div class="total">
+        <span>Total</span>
+        <span class="weight-total"></span>
+        <span class="amount-total"></span>
+    </div>
+
+    <div class="totalbtn">
+        <button id="btn">Calculate Total</button>
+        <button id="saveBtn">Save as PDF</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
